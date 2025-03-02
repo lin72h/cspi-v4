@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-//import ThemeToggler from "./ThemeToggler";
+// Theme Toggler removed
 import menuData from "./menuData";
 import GlobalSearchModal from "../GlobalSearch";
 
@@ -183,7 +183,7 @@ const Header = () => {
                 </svg>
               </button>
 
-              {session ? (
+              {session && (
                 <>
                   <p>{session?.user?.name}</p>
                   <button
@@ -193,22 +193,6 @@ const Header = () => {
                   >
                     Sign Out
                   </button>
-                </>
-              ) : (
-                <>
-                  <Link
-                    href="/auth/signin"
-                    className="text-regular font-medium text-waterloo hover:text-primary"
-                  >
-                    Sign In
-                  </Link>
-
-                  <Link
-                    href="/auth/signup"
-                    className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
-                  >
-                    Sign Up
-                  </Link>
                 </>
               )}
             </div>

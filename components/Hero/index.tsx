@@ -9,19 +9,15 @@ const Hero = () => {
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
               <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                🔥 Solid - A Complete SaaS Starter Template for SaaS
+                欢迎来到
               </h4>
               <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
-                Robust SaaS Boilerplate and Starter for
                 <span className="relative ml-2.5 inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark ">
-                  Next.js
+                  CSPI 会计事务所
                 </span>
               </h1>
               <p>
-                Packed with all the key integrations you need for swift SaaS
-                startup launch, including - Authentication, Database, Sanity
-                Blog, Essential UI Components, Business Pages and More.
-                Built-winth - Next.js, React 18 and TypeScript.
+                一家精品特许会计师事务所，拥有超过三十年的新西兰本地经验。为注重发展的小型至中型企业主提供商业咨询，并通过便利的奥克兰市中心办公地点，以个性化服务建立稳固的客户关系
               </p>
 
               <div className="mt-10">
@@ -30,9 +26,8 @@ const Hero = () => {
                   aria-label="get started button"
                   className="inline-block rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
                 >
-                  Get Started
+                  联系我们
                 </Link>
-
               </div>
             </div>
 
