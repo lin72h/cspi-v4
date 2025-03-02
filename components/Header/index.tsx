@@ -40,8 +40,8 @@ const Header = () => {
             : ""
         }`}
       >
-        <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
-          <div className="flex w-full items-center justify-between xl:w-1/4">
+        <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex xl:justify-between 2xl:px-0">
+          <div className="flex items-center xl:w-auto">
             <a href="/">
               <Image
                 src="/images/logo/logo-light.png"
@@ -55,7 +55,7 @@ const Header = () => {
             <button
               onClick={() => setNavigationOpen(!navigationOpen)}
               aria-label="button for menu toggle"
-              className="block xl:hidden"
+              className="ml-auto block xl:hidden"
             >
               <span className="relative block h-5.5 w-5.5 cursor-pointer">
                 <span className="du-block absolute right-0 h-full w-full">
@@ -93,7 +93,7 @@ const Header = () => {
 
           {/* Nav Menu Start   */}
           <div
-            className={`invisible h-0 w-full items-center justify-between xl:visible xl:flex xl:h-auto xl:w-full ${
+            className={`invisible h-0 w-full items-center justify-end xl:visible xl:flex xl:h-auto xl:w-auto ${
               navigationOpen &&
               "navbar !visible mt-4 h-auto max-h-[400px] rounded-md bg-white p-7.5 shadow-solid-5 dark:bg-blacksection xl:h-auto xl:p-0 xl:shadow-none xl:dark:bg-transparent"
             }`}
