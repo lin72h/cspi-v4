@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import ThemeToggler from "./ThemeToggler";
+//import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 import GlobalSearchModal from "../GlobalSearch";
 
@@ -44,18 +44,11 @@ const Header = () => {
           <div className="flex w-full items-center justify-between xl:w-1/4">
             <a href="/">
               <Image
-                src="/images/logo/logo-dark.svg"
-                alt="logo"
-                width={119.03}
-                height={30}
-                className="hidden w-full dark:block"
-              />
-              <Image
                 src="/images/logo/logo-light.svg"
                 alt="logo"
                 width={119.03}
                 height={30}
-                className="w-full dark:hidden"
+                className="w-full"
               />
             </a>
 
@@ -189,8 +182,6 @@ const Header = () => {
                   </defs>
                 </svg>
               </button>
-
-              <ThemeToggler />
 
               {session ? (
                 <>
